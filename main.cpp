@@ -5,12 +5,20 @@
 */
 
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 int main(){
 
-  /* Code Here */
+  string Entrada = "AABCCDDEEFF";
+
+  for(int i = 0; i < Entrada.length()-1; i+=2){ //se mueve de dos en dos
+    if(Entrada[i] != Entrada[i+1] ){ //cuando encuentra el unico se detiene
+      cout << Entrada[i] << endl;
+      break;
+    }
+  }
 
   return 0;
 }
